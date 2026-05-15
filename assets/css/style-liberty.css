@@ -241,12 +241,12 @@ sup {
 }
 
 a {
-  color: var(--primary-color);
+  color: #a77a28;
   text-decoration: underline;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: #a77a28;
 }
 
 a:not([href]):not([class]),
@@ -3727,7 +3727,7 @@ fieldset:disabled .btn {
 .btn-outline-warning:hover {
   color: #000;
   background-color: #ffc107;
-  border-color: #ffc107;
+  border-color: #ebb208ff;
 }
 
 .btn-check:focus + .btn-outline-warning,
@@ -18159,6 +18159,7 @@ p.white {
   font-family: "Poppins", sans-serif;
 }
 
+
 .propertyw3-btnhny .btn {
   text-transform: none;
 }
@@ -19017,7 +19018,7 @@ form.search-box {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/fourtowerview.jpeg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -19030,27 +19031,27 @@ form.search-box {
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/fourtowerview2.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(../images/fourtowerview2.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top4 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/reception.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top5 {
-  background: url(../images/banner5.jpg) no-repeat center;
+  background: url(../images/room4.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top6 {
-  background: url(../images/banner6.jpg) no-repeat center;
+  background: url(../images/room12.jpeg) no-repeat center;
   background-size: cover;
 }
 
@@ -19864,7 +19865,7 @@ button.owl-next {
 /*--//features--*/
 /*--/w3l-join-main--*/
 .w3l-join-main {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/fourtowerview2.jpeg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -20017,7 +20018,7 @@ ul.w3l-right-book li span {
 
 .pricing-header h4 {
   text-align: center;
-  background: var(--primary-color);
+  background:#a77a28;
   font-size: 16px;
   padding: 6px 10px;
   color: #fff;
@@ -20056,7 +20057,7 @@ ul.w3l-right-book li span {
 }
 
 .w3-pricing-inner-inf .pricing-header .price h3 {
-  color: var(--primary-color);
+  color:#a77a28;
   font-size: 50px;
   line-height: 60px;
   font-weight: 600;
@@ -20090,7 +20091,7 @@ ul.w3l-right-book li span {
 }
 
 .w3-pricing-inner-inf .inner ul.list-style li span {
-  color: var(--primary-color);
+  color:#a77a28;
   margin-right: 6px;
 }
 
@@ -20101,8 +20102,8 @@ ul.w3l-right-book li span {
 }
 
 .pricing-get-button .btn:hover {
-  background: var(--primary-color);
-  border-color: var(--primary-color);
+  background: #a77a28;
+  border-color: #a77a28;
   color: #fff;
 }
 
@@ -20215,7 +20216,7 @@ pre {
 /*--//error--*/
 /*--/inner-banner--*/
 .breadcrumb-bg-about {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/bread-crumb.png) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -20892,9 +20893,9 @@ ul.page-pagination li a.next {
 ul.page-pagination li a.page-numbers:hover,
 ul.page-pagination li a.next:hover,
 ul.page-pagination li a.page-numbers.current {
-  background-color: var(--primary-color);
+  background-color: #a77a28;
   color: #fff;
-  border: 1px solid var(--primary-color);
+  border: 1px solid #a77a28;
 }
 
 /*--//page-pagination--*/
@@ -21850,7 +21851,7 @@ h3.post-content-title {
 /*--//gallery--*/
 /*--/testimonials--*/
 .w3l-clients {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/fourtowerview2.jpeg) no-repeat center;
   -ms-background-size: cover;
   background-size: cover;
   z-index: 0;
@@ -22064,7 +22065,7 @@ h3.post-content-title {
 .cont-left span {
   font-size: 18px;
   margin-top: 5px;
-  color: var(--primary-color);
+  color:#a77a28;
   display: inline-block;
   border-radius: var(--border-radius);
   text-align: center;
