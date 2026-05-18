@@ -14,6 +14,9 @@
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+        <link rel="stylesheet" href="assets/css/whatsapp.css">
+         <link rel="stylesheet" href="assets/css/preloader.css">
+
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
@@ -182,7 +185,24 @@
 </head>
 
 <body>
+<!-- PRELOADER -->
+<div id="preloader">
 
+    <div class="preloader-box">
+
+        <!-- LOGO -->
+        <img src="assets/images/logo.png" alt="Four Towers Hotel Logo" class="preloader-logo">
+
+        <!-- TEXTS -->
+        <h1 id="text1">Hello</h1>
+        <h1 id="text2">Welcome</h1>
+        <h1 id="text3">To </h1>
+        <h1 id="text4">Four Towers Hotel & Suites</h1>
+
+    </div>
+
+</div>
+</div>
 <header id="site-header" class="fixed-top">
     <div class="container">
 
@@ -292,10 +312,10 @@
         <div class="container">
           <div class="banner-info header-hero-19">
             <h3 class="title-hero-19">
-              Four Towers Hotel & Suites.
+              <!-- Four Towers Hotel & Suites. -->
             </h3>
             <a href="about.html" class="read-more mt-4">
-              Discover More <i class="fas fa-hotel ms-2"></i>
+              <!-- Discover More <i class="fas fa-hotel ms-2"></i> -->
             </a>
           </div>
         </div>
@@ -511,7 +531,7 @@
 
     <!-- SECTION TITLE -->
     <div class="title-content text-center mb-lg-5 mb-4">
-      <h6 class="title-subhny">Our Services</h6>
+      <h6 class="title-subhny">Services</h6>
       <h3 class="title-w3l mb-3">
         Everything You Need for a Comfortable Stay
       </h3>
@@ -785,7 +805,7 @@
 
     <!-- TITLE -->
     <div class="text-center mb-5">
-      <h6 class="text-uppercase text-muted" style="color: #a77a28!important;">Our Gallery</h6>
+      <h6 class="text-uppercase text-muted" style="color: #a77a28!important;">Gallery</h6>
       <h2 class="fw-bold">Luxury Moments</h2>
     </div>
 
@@ -795,8 +815,8 @@
       <!-- ITEM 1 -->
       <div class="col-lg-3 col-md-6 col-6">
         <div class="gallery-card">
-          <a href="assets/images/room1.jpeg" class="glightbox">
-            <img src="assets/images/room1.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img">
+          <a href="assets/images/room4.jpeg" class="glightbox">
+            <img src="assets/images/room4.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img">
           </a>
         </div>
       </div>
@@ -804,8 +824,8 @@
       <!-- ITEM 2 -->
       <div class="col-lg-3 col-md-6 col-6">
         <div class="gallery-card">
-          <a href="assets/images/room2.jpeg" class="glightbox">
-            <img src="assets/images/room2.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img">
+          <a href="assets/images/room10.jpeg" class="glightbox">
+            <img src="assets/images/room10.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img">
           </a>
         </div>
       </div>
@@ -822,8 +842,8 @@
       <!-- ITEM 4 -->
       <div class="col-lg-3 col-md-6 col-6">
         <div class="gallery-card">
-          <a href="assets/images/room4.jpeg" class="glightbox">
-            <img src="assets/images/room4.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img">
+          <a href="assets/images/room1.jpeg" class="glightbox">
+            <img src="assets/images/room1.jpeg" class="img-fluid rounded-4 shadow-sm gallery-img">
           </a>
         </div>
       </div>
@@ -922,42 +942,28 @@
   </div>
 </section>
 <style>
-  .mission-text {
+  .mission-text,
+  [data-theme="dark"] .mission-text,
+  [data-theme="light"] .mission-text,
+  body.dark .mission-text,
+  body.light .mission-text {
     font-size: 18px;
     line-height: 1.8;
     font-weight: 500;
-
-    /* DEFAULT (LIGHT MODE) */
-    color: #111;
-}
-
-/* DARK MODE SUPPORT (your template likely uses data-theme="dark") */
-[data-theme="dark"] .mission-text {
-    color: #ffffff;
-}
-
-/* OPTIONAL: if your theme uses body.dark instead */
-body.dark .mission-text {
-    color: #ffffff;
-}
-
-/* OPTIONAL GOLD ACCENT MODE (if you prefer luxury look) */
-[data-theme="light"] .mission-text {
-    color: #f0eeebff; /* elegant gold */
-}
+    color: #ffffff !important;
+  }
 </style>
     <!-- //testimonials -->
     <div style="margin: 8px auto; display: block; text-align: center">
       <!---728x90--->
     </div>
     <!--/w3l-blog-->
-
-    <section class="w3l-blog">
+<section class="w3l-blog">
   <div class="blog py-5" id="Rooms">
     <div class="container py-lg-5 py-md-4 py-2">
 
       <div class="title-content text-center mb-lg-3 mb-4">
-        <h6 class="title-subhny">Our Rooms</h6>
+        <h6 class="title-subhny">Rooms</h6>
         <h3 class="title-w3l mb-5">Luxury Accommodation</h3>
       </div>
 
@@ -965,9 +971,9 @@ body.dark .mission-text {
 
         <!-- AMBASSADOR -->
         <div class="col-lg-4 col-md-6 item">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-header p-0 position-relative">
-              <a href="rooms.html" class="zoom d-block">
+              <a href="rooms_suites.html" class="zoom d-block">
                 <img class="card-img-bottom d-block"
                   src="assets/images/room4.jpeg"
                   alt="Ambassador Room">
@@ -977,8 +983,17 @@ body.dark .mission-text {
             <div class="card-body blog-details text-center">
               <p class="category">Premium Suite</p>
 
+              <!-- GOLD STARS -->
+              <div class="room-stars mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
               <h4>
-                <a href="rooms.html" class="blog-desc">
+                <a href="rooms_suites.html" class="blog-desc">
                   Ambassador Room
                 </a>
               </h4>
@@ -992,9 +1007,9 @@ body.dark .mission-text {
 
         <!-- SUPER EXECUTIVE -->
         <div class="col-lg-4 col-md-6 item mt-md-0 mt-5">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-header p-0 position-relative">
-              <a href="rooms.html" class="zoom d-block">
+              <a href="rooms_suites.html" class="zoom d-block">
                 <img class="card-img-bottom d-block"
                   src="assets/images/room11.jpeg"
                   alt="Super Executive Room">
@@ -1004,8 +1019,17 @@ body.dark .mission-text {
             <div class="card-body blog-details text-center">
               <p class="category">Executive Class</p>
 
+              <!-- GOLD STARS -->
+              <div class="room-stars mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
               <h4>
-                <a href="rooms.html" class="blog-desc">
+                <a href="rooms_suites.html" class="blog-desc">
                   Super Executive
                 </a>
               </h4>
@@ -1019,9 +1043,9 @@ body.dark .mission-text {
 
         <!-- DELUXE -->
         <div class="col-lg-4 col-md-6 item mt-lg-0 mt-5">
-          <div class="card">
+          <div class="card h-100">
             <div class="card-header p-0 position-relative">
-              <a href="rooms.html" class="zoom d-block">
+              <a href="rooms_suites.html" class="zoom d-block">
                 <img class="card-img-bottom d-block"
                   src="assets/images/room8.jpeg"
                   alt="Deluxe Room">
@@ -1031,8 +1055,17 @@ body.dark .mission-text {
             <div class="card-body blog-details text-center">
               <p class="category">Comfort Stay</p>
 
+              <!-- GOLD STARS -->
+              <div class="room-stars mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
               <h4>
-                <a href="rooms.html" class="blog-desc">
+                <a href="rooms_suites.html" class="blog-desc">
                   Deluxe Room
                 </a>
               </h4>
@@ -1049,7 +1082,50 @@ body.dark .mission-text {
     </div>
   </div>
 </section>
-    <!--//w3l-blog-->
+
+<style>
+  .room-stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: #a77a28;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .room-stars i {
+    transition: 0.3s ease;
+  }
+
+  .card:hover .room-stars i {
+    transform: scale(1.05);
+  }
+
+  .card {
+    border: none;
+    overflow: hidden;
+    transition: 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-img-bottom {
+    height: 260px;
+    object-fit: cover;
+  }
+</style>
+    <!--//w3l-whatssap-->
+    <a href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Support,%20I%20need%20assistance"
+   class="whatsapp-float-left"
+   target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+    <span>Support</span>
+
+</a>
    <!-- footer -->
 <footer class="w3l-footer">
   <div class="w3l-footer-16 py-5">
@@ -1059,8 +1135,8 @@ body.dark .mission-text {
         <!-- Hotel Info -->
         <div class="col-lg-5 col-md-6 pe-lg-5">
           <h2 class="footerw3l-logo">
-            <a class="navbar-brand" href="index.html">
-              Four Towers Hotel & Suites
+           <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                <img src="assets/images/logo.png" alt="Interiority Logo" class="img-fluid logo-img">
             </a>
           </h2>
 
@@ -1284,6 +1360,8 @@ body.dark .mission-text {
 
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/preloader.js"></script>
+
 
     <script
       defer

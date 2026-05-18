@@ -1,0 +1,39 @@
+#preloader{
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.preloader-box{
+    text-align: center;
+    position: relative;
+}
+
+/* LOGO - INCREASED SIZE */
+.preloader-logo{
+    width: 110px;   /* increased from 80px */
+    margin-bottom: 35px; /* more spacing below logo */
+}
+
+/* TEXT STYLE */
+.preloader-box h1{
+    position: absolute;
+    left: 50%;
+    top: 68%; /* moved down from 60% */
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    color: #a77a28;
+    white-space: nowrap;
+
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* DARK MODE */
+body.dark-mode #preloader{
+    background: #111;
+}
