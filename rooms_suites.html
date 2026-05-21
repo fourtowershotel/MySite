@@ -1,600 +1,468 @@
-
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Four Towers Hotel & Suites / Booking</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
-<link rel="shortcut icon" href="assets/images/logo.png">
-
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
+    <link rel="shortcut icon" href="assets/images/logo.png">
     <!-- Google Fonts -->
     <link href="//fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
-
     <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
     <link rel="stylesheet" href="assets/css/whatsapp.css">
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-
     <!-- PROFESSIONAL LOGO STYLING ONLY -->
     <style>
-        .navbar-brand {
-            display: flex;
-            align-items: center;
-        }
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+      }
 
+      .logo-img {
+        max-height: 70px;
+        width: auto;
+        object-fit: contain;
+      }
+
+      @media (max-width: 992px) {
         .logo-img {
-            max-height: 70px;
-            width: auto;
-            object-fit: contain;
+          max-height: 60px;
         }
+      }
 
-        @media (max-width: 992px) {
-            .logo-img {
-                max-height: 60px;
-            }
+      @media (max-width: 576px) {
+        .logo-img {
+          max-height: 50px;
         }
+      }
 
-        @media (max-width: 576px) {
-            .logo-img {
-                max-height: 50px;
-            }
-        }
+      /* clean vertical alignment */
+      .navbar {
+        align-items: center;
+      }
 
-        /* clean vertical alignment */
-        .navbar {
-            align-items: center;
-        }
-
-        .mobile-position {
-            display: flex;
-            align-items: center;
-        }
-        
+      .mobile-position {
+        display: flex;
+        align-items: center;
+      }
     </style>
-</head>
-
-<body>
-
-<header id="site-header" class="fixed-top">
-    <div class="container">
-
-        <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
-
-            <!-- ✅ LOGO ONLY (TEXT REMOVED) -->
-            <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
-                <img src="assets/images/logo.png" alt="Interiority Logo" class="img-fluid logo-img">
-            </a>
-
-            <!-- TOGGLER -->
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarScroll">
-
-                <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
-
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="rooms_suites.html">Rooms & Suites</a>
-                    </li>
-
-                     <li class="nav-item">
-                        <a class="nav-link" href="service.html">Services</a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
-                <!-- SEARCH + PHONE -->
-                <ul class="header-search d-flex mx-lg-4">
-
-                    <li class="nav-item search-right">
-                        <a href="#search" title="search">
-                            <span class="fas fa-search me-lg-4"></span>
-                        </a>
-
-                        <div id="search" class="pop-overlay">
-                            <div class="popup">
-                                <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
-                                <form action="#" method="GET" class="search-box d-flex position-relative">
-                                    <input type="search" placeholder="Enter Keyword here" name="search" required>
-                                    <button type="submit" class="btn btn-primary">
-                                        <span class="fas fa-search"></span>
-                                    </button>
-                                </form>
-                            </div>
-                            <a class="close" href="#close">×</a>
-                        </div>
-                    </li>
-
-                   <li class="nav-item propertyw3-btnhny">
-                    <a class="btn btn-style btn-primary" href="tel:+2349154405880">
-                        <i class="fas fa-phone-alt me-2"></i>
-                        Reservations
-                    </a>
-                </li>
-
-                </ul>
-
-            </div>
-
-            <!-- THEME SWITCH -->
-            <div class="mobile-position">
-                <nav class="navigation">
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox">
-                            <div class="mode-container">
-                                <i class="gg-sun"></i>
-                                <i class="gg-moon"></i>
-                            </div>
-                        </label>
-                    </div>
-                </nav>
-            </div>
-
-        </nav>
-
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="spinner"></div>
     </div>
-</header>
+    <header id="site-header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+          <!-- ✅ LOGO ONLY (TEXT REMOVED) -->
+          <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+            <img src="assets/images/logo.png" alt="Interiority Logo" class="img-fluid logo-img">
+          </a>
+          <!-- TOGGLER -->
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms_suites.html">Rooms & Suites</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <!-- SEARCH + PHONE -->
+            <ul class="header-search d-flex mx-lg-4">
+              <li class="nav-item search-right">
+                <a href="#search" title="search">
+                  <span class="fas fa-search me-lg-4"></span>
+                </a>
+                <div id="search" class="pop-overlay">
+                  <div class="popup">
+                    <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
+                    <form action="#" method="GET" class="search-box d-flex position-relative">
+                      <input type="search" placeholder="Enter Keyword here" name="search" required>
+                      <button type="submit" class="btn btn-primary">
+                        <span class="fas fa-search"></span>
+                      </button>
+                    </form>
+                  </div>
+                  <a class="close" href="#close">×</a>
+                </div>
+              </li>
+              <li class="nav-item propertyw3-btnhny">
+                <a class="btn btn-style btn-primary" href="tel:+2349154405880">
+                  <i class="fas fa-phone-alt me-2"></i> Reservations </a>
+              </li>
+            </ul>
+          </div>
+          <!-- THEME SWITCH -->
+          <div class="mobile-position">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!--//Header-->
     <!-- breadcrumb -->
     <section class="w3l-about-breadcrumb">
-        <div class="breadcrumb-bg breadcrumb-bg-about">
-            <div class="container py-5">
-                <div class="w3breadcrumb-gids text-center py-sm-5">
-                    <div class="w3breadcrumb-info">
-                        <h2 class="w3ltop-title">Rooms & Suites</h2>
-                    </div>
-                    <ul class="breadcrumbs-custom-path">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="active"><span class="fas fa-angle-right mx-2"></span> Rooms & Suites</li>
-                    </ul>
-                </div>
+      <div class="breadcrumb-bg breadcrumb-bg-about">
+        <div class="container py-5">
+          <div class="w3breadcrumb-gids text-center py-sm-5">
+            <div class="w3breadcrumb-info">
+              <h2 class="w3ltop-title">Rooms & Suites</h2>
             </div>
-        </div>
-    </section>
-   <section class="pt-4 pb-2" id="booking-flow">
-    <div class="container">
-
-        <div class="title-content text-center mb-5">
-            <h6 class="title-subhny">Booking Process</h6>
-            <h3 class="title-w3l">How Your Reservation Works</h3>
-        </div>
-
-        <div class="row text-center">
-
-            <div class="col-md-4 mb-0">
-                <div class="p-4 shadow-sm rounded theme-card">
-                    <div class="mb-3">
-                        <i class="fas fa-comments fa-2x" style="color:#a77a28;"></i>
-                    </div>
-                    <h5>1. Send Request</h5>
-                    <p>Contact us via WhatsApp with your preferred room and stay details.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="p-4 shadow-sm rounded theme-card">
-                    <div class="mb-3">
-                        <i class="fas fa-check-circle fa-2x" style="color:#a77a28;"></i>
-                    </div>
-                    <h5>2. Confirmation</h5>
-                    <p>
-                        Our support team confirms availability, verifies payment receipt,
-                        and approves your booking.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="p-4 shadow-sm rounded theme-card">
-                    <div class="mb-3">
-                        <i class="fas fa-hotel fa-2x" style="color:#a77a28;"></i>
-                    </div>
-                    <h5>3. Check-In</h5>
-                    <p>Arrive at the hotel and enjoy a smooth and comfortable check-in experience.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-    <!--//breadcrumb-->
-    <!-- booking -->
-  <section class="w3l-blog py-5">
-  <div class="container py-md-5">
-
-    <div class="title-content text-center mb-5">
-      <h6 class="title-subhny">Our Rooms</h6>
-      <h3 class="title-w3l">Luxury Accommodation</h3>
-    </div>
-
-    <div class="row justify-content-center">
-
-      <!-- Ambassador Room -->
-      <div class="col-lg-4 col-md-6 mb-5">
-        <div class="card border-0 shadow-sm h-100 room-card">
-
-          <div class="card-header p-0 border-0 position-relative overflow-hidden">
-            <img
-              class="card-img-top room-img"
-              src="assets/images/room10.jpeg"
-              alt="Ambassador Room"
-            >
-          </div>
-
-          <div class="card-body blog-details text-center">
-
-            <div class="author align-items-center mb-3">
-              <p class="category">Premium Suite</p>
-            </div>
-
-            <h4 class="mb-3">
-              <a href="#" class="blog-desc">
-                Ambassador Room
-              </a>
-            </h4>
-
-            <p>
-              Elegant luxury, premium comfort,
-              and a relaxing atmosphere for a perfect stay.
-            </p>
-
-            <a
-              href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Hotel%20%26%20Suites,%20I%20would%20like%20to%20inquire%20about%20the%20availability%20of%20the%20Ambassador%20Room%20and%20possibly%20make%20a%20reservation."
-              target="_blank"
-              class="btn btn-style btn-primary mt-3 room-btn"
-              style="color:#fff !important;"
-            >
-              Book Now
-            </a>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Super Executive -->
-      <div class="col-lg-4 col-md-6 mb-5">
-        <div class="card border-0 shadow-sm h-100 room-card">
-
-          <div class="card-header p-0 border-0 position-relative overflow-hidden">
-            <img
-              class="card-img-top room-img"
-              src="assets/images/room11.jpeg"
-              alt="Super Executive Room"
-            >
-          </div>
-
-          <div class="card-body blog-details text-center">
-
-            <div class="author align-items-center mb-3">
-              <p class="category">Executive Comfort</p>
-            </div>
-
-            <h4 class="mb-3">
-              <a href="#" class="blog-desc">
-                Super Executive Room
-              </a>
-            </h4>
-
-            <p>
-              Stylish interiors with modern amenities
-              designed for comfort and convenience.
-            </p>
-
-            <a
-              href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Hotel%20%26%20Suites,%20I%20would%20like%20to%20inquire%20about%20the%20availability%20of%20the%20Super%20Executive%20Room%20and%20possibly%20make%20a%20reservation."
-              target="_blank"
-              class="btn btn-style btn-primary mt-3 room-btn"
-              style="color:#fff !important;"
-            >
-              Book Now
-            </a>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Deluxe Room -->
-      <div class="col-lg-4 col-md-6 mb-5">
-        <div class="card border-0 shadow-sm h-100 room-card">
-
-          <div class="card-header p-0 border-0 position-relative overflow-hidden">
-            <img
-              class="card-img-top room-img"
-              src="assets/images/room8.jpeg"
-              alt="Deluxe Room"
-            >
-          </div>
-
-          <div class="card-body blog-details text-center">
-
-            <div class="author align-items-center mb-3">
-              <p class="category">Modern Luxury</p>
-            </div>
-
-            <h4 class="mb-3">
-              <a href="#" class="blog-desc">
-                Deluxe Room
-              </a>
-            </h4>
-
-            <p>
-              Cozy, modern, and comfortable rooms
-              tailored for relaxation and peace.
-            </p>
-
-            <a
-              href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Hotel%20%26%20Suites,%20I%20would%20like%20to%20inquire%20about%20the%20availability%20of%20the%20Deluxe%20Room%20and%20possibly%20make%20a%20reservation."
-              target="_blank"
-              class="btn btn-style btn-primary mt-3 room-btn"
-              style="color:#fff !important;"
-            >
-              Book Now
-            </a>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<style>
-.room-card{
-    border-radius:18px;
-    overflow:hidden;
-    transition:0.4s ease;
-    background:var(--bg-color);
-}
-
-.room-card:hover{
-    transform:translateY(-8px);
-}
-
-.room-img{
-    height:280px;
-    object-fit:cover;
-    transition:0.5s ease;
-}
-
-.room-card:hover .room-img{
-    transform:scale(1.05);
-}
-
-.blog-desc{
-    text-decoration:none;
-    color: var(--heading-color);
-}
-
-/* CENTER BUTTON */
-.room-btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    min-width:170px;
-}
-
-/* MOBILE */
-@media (max-width:768px){
-
-    .room-img{
-        height:220px;
-    }
-
-    .room-btn{
-        width:100%;
-        max-width:220px;
-    }
-
-}
-</style>
-    <!-- //blog section -->
-	<div style="margin: 8px auto; display: block; text-align:center;">
-
-<!---728x90--->
- 
-</div>
-    <!--//w3l-whatssap-->
-    <a href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Support,%20I%20need%20assistance"
-   class="whatsapp-float-left"
-   target="_blank">
-
-    <i class="fab fa-whatsapp"></i>
-    <span>Support</span>
-
-</a>
-      <!-- footer -->
-   <!-- footer -->
-<footer class="w3l-footer">
-  <div class="w3l-footer-16 py-5">
-    <div class="container py-md-5 py-3">
-      <div class="row footer-p mb-lg-5">
-
-        <!-- Hotel Info -->
-        <div class="col-lg-5 col-md-6 pe-lg-5">
-          <h2 class="footerw3l-logo">
-           <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
-                <img src="assets/images/logo.png" alt="Interiority Logo" class="img-fluid logo-img">
-            </a>
-          </h2>
-
-          <p class="mt-3">
-            Four Towers Hotel & Suites offers comfortable accommodation,
-            quality hospitality services, secure environment, and a relaxing
-            experience for business travelers, tourists, families, and event guests.
-          </p>
-
-          <p class="mt-4">
-            <i class="fas fa-map-marker-alt me-2"></i>
-            No 10 Liberation Avenue, Off Ukaegbu Road,
-            Ogborhill Aba, Opposite Methodist Church.
-          </p>
-
-          <div class="columns-2 mt-lg-4 mt-4">
-            <ul class="social">
+            <ul class="breadcrumbs-custom-path">
               <li>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="index.html">Home</a>
               </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <li class="active">
+                <span class="fas fa-angle-right mx-2"></span> Rooms & Suites
               </li>
             </ul>
           </div>
         </div>
-
-        <!-- Quick Links -->
-        <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
-          <h3>Quick Links</h3>
-
-          <ul class="footer-gd-16">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="rooms.html">Rooms & Suites</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+      </div>
+    </section>
+    <section class="pt-4 pb-2" id="booking-flow">
+      <div class="container">
+        <div class="title-content text-center mb-5">
+          <h6 class="title-subhny">Booking Process</h6>
+          <h3 class="title-w3l">How Your Reservation Works</h3>
         </div>
+        <div class="row text-center">
+          <div class="col-md-4 mb-0">
+            <div class="p-4 shadow-sm rounded theme-card">
+              <div class="mb-3">
+                <i class="fas fa-comments fa-2x" style="color:#a77a28;"></i>
+              </div>
+              <h5>1. Send Request</h5>
+              <p>Contact us via WhatsApp with your preferred room and stay details.</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow-sm rounded theme-card">
+              <div class="mb-3">
+                <i class="fas fa-check-circle fa-2x" style="color:#a77a28;"></i>
+              </div>
+              <h5>2. Confirmation</h5>
+              <p> Our support team confirms availability, verifies payment receipt, and approves your booking. </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 shadow-sm rounded theme-card">
+              <div class="mb-3">
+                <i class="fas fa-hotel fa-2x" style="color:#a77a28;"></i>
+              </div>
+              <h5>3. Check-In</h5>
+              <p>Arrive at the hotel and enjoy a smooth and comfortable check-in experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--//breadcrumb-->
+    <!-- booking -->
+    <section class="w3l-blog py-5">
+      <div class="container py-md-5">
+        <div class="title-content text-center mb-5">
+          <h6 class="title-subhny">Our Rooms</h6>
+          <h3 class="title-w3l">Luxury Accommodation</h3>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Ambassador Room -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card border-0 shadow-sm h-100 room-card">
+              <div class="card-header p-0 border-0 position-relative overflow-hidden">
+                <img class="card-img-top room-img" src="assets/images/room10.jpeg" alt="Ambassador Room">
+              </div>
+              <div class="card-body blog-details text-center">
+                <div class="author align-items-center mb-3">
+                  <p class="category">Premium Suite</p>
+                </div>
+                <h4 class="mb-3">
+                  <a href="#" class="blog-desc"> Ambassador Room </a>
+                </h4>
+                <p> Elegant luxury, premium comfort, and a relaxing atmosphere for a perfect stay. </p>
+                <a href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Hotel%20%26%20Suites,%20I%20would%20like%20to%20inquire%20about%20the%20availability%20of%20the%20Ambassador%20Room%20and%20possibly%20make%20a%20reservation." target="_blank" class="btn btn-style btn-primary mt-3 room-btn" style="color:#fff !important;"> Book Now </a>
+              </div>
+            </div>
+          </div>
+          <!-- Super Executive -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card border-0 shadow-sm h-100 room-card">
+              <div class="card-header p-0 border-0 position-relative overflow-hidden">
+                <img class="card-img-top room-img" src="assets/images/room11.jpeg" alt="Super Executive Room">
+              </div>
+              <div class="card-body blog-details text-center">
+                <div class="author align-items-center mb-3">
+                  <p class="category">Executive Comfort</p>
+                </div>
+                <h4 class="mb-3">
+                  <a href="#" class="blog-desc"> Super Executive Room </a>
+                </h4>
+                <p> Stylish interiors with modern amenities designed for comfort and convenience. </p>
+                <a href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Hotel%20%26%20Suites,%20I%20would%20like%20to%20inquire%20about%20the%20availability%20of%20the%20Super%20Executive%20Room%20and%20possibly%20make%20a%20reservation." target="_blank" class="btn btn-style btn-primary mt-3 room-btn" style="color:#fff !important;"> Book Now </a>
+              </div>
+            </div>
+          </div>
+          <!-- Deluxe Room -->
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="card border-0 shadow-sm h-100 room-card">
+              <div class="card-header p-0 border-0 position-relative overflow-hidden">
+                <img class="card-img-top room-img" src="assets/images/room8.jpeg" alt="Deluxe Room">
+              </div>
+              <div class="card-body blog-details text-center">
+                <div class="author align-items-center mb-3">
+                  <p class="category">Modern Luxury</p>
+                </div>
+                <h4 class="mb-3">
+                  <a href="#" class="blog-desc"> Deluxe Room </a>
+                </h4>
+                <p> Cozy, modern, and comfortable rooms tailored for relaxation and peace. </p>
+                <a href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Hotel%20%26%20Suites,%20I%20would%20like%20to%20inquire%20about%20the%20availability%20of%20the%20Deluxe%20Room%20and%20possibly%20make%20a%20reservation." target="_blank" class="btn btn-style btn-primary mt-3 room-btn" style="color:#fff !important;"> Book Now </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      .room-card {
+        border-radius: 18px;
+        overflow: hidden;
+        transition: 0.4s ease;
+        background: var(--bg-color);
+      }
 
-        <!-- Contact -->
-        <div class="col-lg-4 col-md-6 column mt-lg-0 mt-4 pl-xl-0">
-          <h3>Contact Info</h3>
+      .room-card:hover {
+        transform: translateY(-8px);
+      }
 
-          <div class="end-column">
-           <p class="mb-3">
-            <i class="fas fa-phone-alt me-2"></i>
-            <a href="tel:+2349154405880">+234 915 440 5880</a>
-          </p>
+      .room-img {
+        height: 280px;
+        object-fit: cover;
+        transition: 0.5s ease;
+      }
 
-            <p class="mb-3">
-              <i class="fas fa-envelope me-2"></i>
-              info@fourtowershotel.com
-            </p>
+      .room-card:hover .room-img {
+        transform: scale(1.05);
+      }
 
-            <p>
-              We are committed to giving every guest a comfortable,
-              secure, and memorable stay.
+      .blog-desc {
+        text-decoration: none;
+        color: var(--heading-color);
+      }
+
+      /* CENTER BUTTON */
+      .room-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 170px;
+      }
+
+      /* MOBILE */
+      @media (max-width:768px) {
+        .room-img {
+          height: 220px;
+        }
+
+        .room-btn {
+          width: 100%;
+          max-width: 220px;
+        }
+      }
+    </style>
+    <!-- //blog section -->
+    <div style="margin: 8px auto; display: block; text-align:center;">
+      <!---728x90--->
+    </div>
+    <!--//w3l-whatssap-->
+    <a href="https://wa.me/2347039961415?text=Hello%20Four%20Towers%20Support,%20I%20need%20assistance" class="whatsapp-float-left" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span>Support</span>
+    </a>
+    <!-- footer -->
+    <!-- footer -->
+    <footer class="w3l-footer">
+      <div class="w3l-footer-16 py-5">
+        <div class="container py-md-5 py-3">
+          <div class="row footer-p mb-lg-5">
+            <!-- Hotel Info -->
+            <div class="col-lg-5 col-md-6 pe-lg-5">
+              <h2 class="footerw3l-logo">
+                <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                  <img src="assets/images/logo.png" alt="Interiority Logo" class="img-fluid logo-img">
+                </a>
+              </h2>
+              <p class="mt-3"> Four Towers Hotel & Suites offers comfortable accommodation, quality hospitality services, secure environment, and a relaxing experience for business travelers, tourists, families, and event guests. </p>
+              <p class="mt-4">
+                <i class="fas fa-map-marker-alt me-2"></i> No 10 Liberation Avenue, Off Ukaegbu Road, Ogborhill Aba, Opposite Methodist Church.
+              </p>
+              <div class="columns-2 mt-lg-4 mt-4">
+                <ul class="social">
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+              <h3>Quick Links</h3>
+              <ul class="footer-gd-16">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="rooms.html">Rooms & Suites</a>
+                </li>
+                <li>
+                  <a href="services.html">Services</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Contact -->
+            <div class="col-lg-4 col-md-6 column mt-lg-0 mt-4 pl-xl-0">
+              <h3>Contact Info</h3>
+              <div class="end-column">
+                <p class="mb-3">
+                  <i class="fas fa-phone-alt me-2"></i>
+                  <a href="tel:+2349154405880">+234 915 440 5880</a>
+                </p>
+                <p class="mb-3">
+                  <i class="fas fa-envelope me-2"></i> info@fourtowershotel.com
+                </p>
+                <p> We are committed to giving every guest a comfortable, secure, and memorable stay. </p>
+              </div>
+            </div>
+          </div>
+          <div class="below-section text-center pt-sm-4 pt-3 mt-5">
+            <p class="copy-text"> &copy; <script>
+                document.write(new Date().getFullYear())
+              </script> Four Towers Hotel & Suites. All rights reserved. </p>
+            <p class="mt-2"> Designed by <a href="https://wa.me/2348141359894" target="_blank" style="color:#a77a28; font-weight:600; text-decoration:none;">
+                <i class="fab fa-whatsapp" style="font-size:14px;"></i> G-KINGS </a> | <a href="mailto:godsonk98@gmail.com" style="color:#a77a28; text-decoration:none;"> godsonk98@gmail.com </a>
             </p>
           </div>
         </div>
       </div>
-
-      <div class="below-section text-center pt-sm-4 pt-3 mt-5">
-        <p class="copy-text">
-          &copy; <script>document.write(new Date().getFullYear())</script>
-          Four Towers Hotel & Suites. All rights reserved.
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- //footer -->
+    </footer>
+    <!-- //footer -->
     <!-- Js scripts -->
     <!-- move top -->
     <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+      <span class="fas fa-level-up-alt" aria-hidden="true"></span>
     </button>
     <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
-            scrollFunction()
-        };
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction()
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
         }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
     <!-- //move top -->
-
-
     <!-- Template JavaScript -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/theme-change.js"></script>
     <!-- MENU-JS -->
     <script>
-        $(window).on("scroll", function() {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 80) {
-                $("#site-header").addClass("nav-fixed");
-            } else {
-                $("#site-header").removeClass("nav-fixed");
-            }
+      $(window).on("scroll", function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function() {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function() {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function() {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
         });
-
-        //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function() {
-            $("header").toggleClass("active");
-        });
-        $(document).on("ready", function() {
-            if ($(window).width() > 991) {
-                $("header").removeClass("active");
-            }
-            $(window).on("resize", function() {
-                if ($(window).width() > 991) {
-                    $("header").removeClass("active");
-                }
-            });
-        });
-
+      });
     </script>
     <!-- //MENU-JS -->
-
     <!-- disable body scroll which navbar is in active -->
     <script>
-        $(function() {
-            $('.navbar-toggler').click(function() {
-                $('body').toggleClass('noscroll');
-            })
-        });
-
+      $(function() {
+        $('.navbar-toggler').click(function() {
+          $('body').toggleClass('noscroll');
+        })
+      });
     </script>
     <!-- //disable body scroll which navbar is in active -->
-
     <!-- //bootstrap -->
     <script src="assets/js/bootstrap.min.js"></script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"ec75ad4155f144c68847bd31482c9a15","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-</body>
-
+    <script src="assets/js/preloader.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"ec75ad4155f144c68847bd31482c9a15","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+  </body>
 </html>
